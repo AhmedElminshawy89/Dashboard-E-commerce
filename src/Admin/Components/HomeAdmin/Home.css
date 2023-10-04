@@ -1,0 +1,140 @@
+@import '../../Admin.css';
+.container-admin{
+    display: flex;
+}
+.container-admin .dashboard-control{
+    position: fixed;
+    background-color: var(--fbg-color-admin);
+    color: var(--color-admin);
+    padding: 20px 5px ;
+    width: 250px;
+    height: 100vh;
+}
+.container-admin .dashboard-control h3{
+    position: relative;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+@media(max-width:992px){
+    .ml{
+        margin-left: 120px;
+    }   
+    .container-admin .dashboard-control{
+        width: 120px;
+    }
+    .container-admin .dashboard-control h3{
+        text-align: center;
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+    .container-admin .dashboard-control .links ul .link .text{
+        display: none;
+    }
+    .container-admin .dashboard-control .links ul .link .icon{
+        font-size: 25px;
+    }
+    .user-admin select{
+        padding: 10px 0px !important;
+        font-size: 12px !important;
+    }
+
+}
+@media(max-width:442px){
+    .ml{
+        margin-left: 100px;
+    }   
+    .container-admin .dashboard-control{
+        width: 80px;
+    }
+    .top-dashboard .search-input {
+        margin-left: -25px;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .top-dashboard .search-input input{
+        margin-left: -20px !important;
+
+    }
+    .container-admin .dashboard-control h3{
+        text-align: center;
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+}
+.container-admin .dashboard-control .links ul .link{
+    position: relative;
+    transition: .5s;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    margin-right: -8px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    display: flex;
+    align-items: center;    
+}
+.container-admin .dashboard-control .links ul .link .icon{
+    margin-right: 12px;
+}
+.container-admin .dashboard-control .links .active {
+    background: #fff !important;
+    color: #000 !important;
+}
+.user-admin{
+    margin-bottom: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 25px;
+}
+.user-admin select{
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: 10px 40px;
+    width: 100%;
+    color: #000;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.top-dashboard{
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-dashboard .search-input{
+    border: 1px solid #eee;
+    padding-right: 35px;
+    padding-left: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+.top-dashboard .search-input svg{
+    font-size: 20px;
+    cursor: pointer;
+}
+.top-dashboard .search-input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+    padding: 10px 30px;
+    max-width: 350px;
+    width: 100%;
+}
+.top-dashboard .search-input input::placeholder{
+    opacity: 1;
+    transition: .5s;
+}
+.top-dashboard .search-input input:focus::placeholder{
+    opacity: .3;
+}

@@ -1,0 +1,14 @@
+:root{
+    --fbg-color-admin:#2a2a85;
+    /* --fbg-color-admin:#20a5ff; */
+    --secbg-color-admin:#010f1c;
+    --color-admin:#fff;
+}
+.ml{
+    margin-left: 250px;
+    padding: 20px 40px ;
+}    
+.dark{
+   background-color: #010f1c;
+}
+

@@ -1,0 +1,185 @@
+.ContentHome .containerrr{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+}
+@media(max-width:400px){
+    .ContentHome .containerrr{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        gap: 30px;
+    }
+}
+.ContentHome .containerrr .box{
+    padding: 10px 20px;
+    background-color: #ffff;
+    box-shadow: 5px 5px 5px 0px #f5f5f5;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+}
+.ContentHome .containerrr .box:hover{
+    background-color: #2a2a85;
+}
+.ContentHome .containerrr .box:hover .t-details .num,
+.ContentHome .containerrr .box:hover .t-details .icon,
+.ContentHome .containerrr .box:hover .text{
+    color: #fff;
+}
+.ContentHome .containerrr .box .t-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.ContentHome .containerrr .box .t-details .num{
+    color: #2a2a85;
+}
+.ContentHome .containerrr .box .t-details .icon{
+    color: #414141;
+}
+.ContentHome .containerrr .box .text{
+    color: #898;
+    font-size: 18px;
+}
+
+
+
+.lastSales,.boxx{
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ffff;
+    box-shadow: 2px 2px 1px 4px #f5f5f5;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.lastSales h3{
+    font-size: 22px;
+    color: #414141;
+}
+.lastSales .table{
+    overflow: scroll;
+}
+
+.lastSales .table table{
+    width: 100%;
+    min-height: 90px;
+    position: relative;
+    /* background-color: #FFFFFF; */
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #7ea8f8;
+    border-style: solid;
+    color: #000000;
+    margin-top: 25px;
+}
+.lastSales thead{
+    background-color: #f5f5f5;
+}
+.lastSales  th{
+    /* border: 1px solid #7ea8f8; */
+    padding: 15px 10px;
+    /* background: #FFFFFF; */
+    text-align: start;
+}
+.lastSales  td{
+    /* border: 1px solid #7ea8f8; */
+    padding: 15px 10px;
+    /* background: #FFFFFF; */
+    text-align: start;
+}
+.lastSales img{
+    max-width: 150px;
+    border-radius: 50%;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height:10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FFFFFF;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7ea8f8;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8ea8f9;
+  }
+
+  .load{
+    position: absolute;
+    padding: -1px 36px;
+    /* margin: 0; */
+    top: 83%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .low,
+  .medium,
+  .high{
+    padding: 5px;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .low{
+    background-color: red;
+  }
+  .medium{
+    background-color: gold;
+  }
+  .high{
+    background-color: #8ea8f9;
+  }
+
+  .whether{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    gap: 30px;
+  }
+  .whether .box{
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ffff;
+    box-shadow: 2px 2px 1px 4px #f5f5f5;
+    border-radius: 8px;
+    transition: .5s;
+    cursor: pointer;
+    transition: .6s;
+  }
+  .whether .box:hover{
+    background-color: #2a2a85;
+    color: #fff;
+  }
+  .whether .box .img-box{
+    text-align: center;
+  }
+  .whether .box img{
+    max-width: 150px;
+    width: 100%;
+  }
+  .whether .info h2,h3{
+    text-align: center;
+  }
+  .whether .sec-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+.boxx .clender{
+    width: 100%;
+}
